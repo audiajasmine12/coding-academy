@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse Academy - Coding Academy & Training</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">CodeVerse</span>
+                        <span class="text-xs block text-cyan-400 font-mono tracking-widest font-semibold uppercase">Academy</span>
+                    </div>
+                </a>
+
+
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2">
+                        <i class="fa-solid fa-house text-xs"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="#gallery" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2">
+                        <i class="fa-solid fa-images text-xs"></i>
+                        <span>Galeri Kegiatan</span>
+                    </a>
+                    <a href="#pendaftaran" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2">
+                        <i class="fa-solid fa-id-card text-xs"></i>
+                        <span>Pendaftaran</span>
+                    </a>
+                </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-2 pb-4 space-y-1">
+            <a href="#home" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">
+                <i class="fa-solid fa-house w-6 text-cyan-400"></i> Beranda
+            </a>
+            <a href="#gallery" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">
+                <i class="fa-solid fa-images w-6 text-cyan-400"></i> Galeri Kegiatan
+            </a>
+            <a href="#pendaftaran" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">
+                <i class="fa-solid fa-id-card w-6 text-cyan-400"></i> Pendaftaran Peserta
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- HOME PAGE -->
+        <section id="page-home" class="page-section py-12 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Hero Section -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-rocket animate-bounce"></i>
+                            <span>Akselerasi Karir Tech Anda</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Kuasai Skill Coding <br>
+                            <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">Masa Depan Bersama Kami</span>
+                        </h1>
+                        <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light">
+                            Program pelatihan coding praktis berorientasi industri. Pelajari Fullstack Web, Python, Mobile Apps, dan Data Science dibimbing oleh profesional.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#pendaftaran" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold text-center shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                                Mulai Pendaftaran <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="#gallery" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700/60 font-semibold text-center transition-all">
+                                Lihat Galeri Kegiatan
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Highlight Banner -->
+                    <div class="relative">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 opacity-20 blur-xl"></div>
+                        <div class="relative rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 space-y-6">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                <h3 class="font-bold text-lg text-white flex items-center space-x-2">
+                                    <i class="fa-solid fa-fire text-amber-500"></i>
+                                    <span>Mengapa CodeVerse?</span>
+                                </h3>
+                                <span class="text-xs bg-slate-800 px-3 py-1 rounded-full text-slate-400 font-mono">2026 Batch</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-cyan-400 font-mono mb-1">1,200+</div>
+                                    <div class="text-xs text-slate-400 font-medium">Alumni Bekerja</div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-indigo-400 font-mono mb-1">98%</div>
+                                    <div class="text-xs text-slate-400 font-medium">Tingkat Kepuasan</div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-purple-400 font-mono mb-1">15+</div>
+                                    <div class="text-xs text-slate-400 font-medium">Mentor Senior</div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-emerald-400 font-mono mb-1">50+</div>
+                                    <div class="text-xs text-slate-400 font-medium">Mitra Perusahaan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY PAGE -->
+        <section id="page-gallery" class="page-section py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Galeri <span class="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Kegiatan Pelatihan</span>
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base">
+                        Dokumentasi suasana belajar, workshop interaktif, serta pertunjukan karya proyek akhir siswa CodeVerse Academy.
+                    </p>
+                </div>
+
+                <!-- Gallery Category Filters -->
+                <div class="flex flex-wrap justify-center gap-2 mb-10">
+                    <button class="gallery-filter active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-filter="all">Semua Kegiatan</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-all" data-filter="bootcamp">Bootcamp Class</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-all" data-filter="workshop">Hackathon & Workshop</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-all" data-filter="mentoring">1-on-1 Mentoring</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="bootcamp">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Fullstack Bootcamp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-cyan-400 text-xs font-semibold px-3 py-1 rounded-full border border-cyan-500/30">
+                                Fullstack Web
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Intensive Fullstack Web Development</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Sesi pembelajaran intensif tatap muka & online membangun aplikasi modern dari HTML/CSS hingga React & Node.js.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-regular fa-calendar text-cyan-400 mr-1"></i> Setiap Sabtu & Minggu</span>
+                                <span><i class="fa-solid fa-user-group text-cyan-400 mr-1"></i> 25 Peserta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="workshop">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Hackathon Night" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-indigo-400 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-500/30">
+                                Hackathon
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">24-Hour Code Challenge Hackathon</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Kompetisi pemrograman 24 jam di mana para peserta berkolaborasi membangun solusi AI & Web Apps untuk tantangan nyata.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-regular fa-calendar text-indigo-400 mr-1"></i> Bulanan</span>
+                                <span><i class="fa-solid fa-trophy text-amber-400 mr-1"></i> Hadiah Jutaan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="mentoring">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Mentoring Class" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/30">
+                                1-on-1 Code Review
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Private Mentoring & Code Review</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Bimbingan privat bersama Senior Developer untuk mendiskusikan bug, optimasi algoritma, serta persiapan interview kerja.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-regular fa-clock text-emerald-400 mr-1"></i> Jadwal Fleksibel</span>
+                                <span><i class="fa-solid fa-star text-amber-400 mr-1"></i> Premium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="bootcamp">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Python & AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-purple-400 text-xs font-semibold px-3 py-1 rounded-full border border-purple-500/30">
+                                Python & Data
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">Python & Data Science Masterclass</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Kelas khusus mempelajari pengolahan data, visualisasi, serta pembuatan model Machine Learning dasar menggunakan Python.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-regular fa-calendar text-purple-400 mr-1"></i> Sesi Malam</span>
+                                <span><i class="fa-solid fa-laptop-code text-purple-400 mr-1"></i> Live Online</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="workshop">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Career Fair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-amber-400 text-xs font-semibold px-3 py-1 rounded-full border border-amber-500/30">
+                                Career Connect
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Tech Hiring Day & Portfolio Showcase</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Ajang pameran karya akhir lulusan yang dihadiri langsung oleh puluhan HRD dan Engineering Lead perusahaan partner.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-solid fa-briefcase text-amber-400 mr-1"></i> Penyaluran Kerja</span>
+                                <span><i class="fa-solid fa-building text-amber-400 mr-1"></i> 50+ Recruiter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="gallery-card group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex flex-col" data-category="mentoring">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Mobile App Workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-pink-400 text-xs font-semibold px-3 py-1 rounded-full border border-pink-500/30">
+                                Flutter / Mobile
+                            </span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-pink-400 transition-colors">Cross-Platform Mobile App Studio</h3>
+                                <p class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    Pelatihan membuat aplikasi Android & iOS dalam satu codebase menggunakan Flutter dan Dart.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+                                <span><i class="fa-solid fa-mobile-screen text-pink-400 mr-1"></i> iOS & Android</span>
+                                <span><i class="fa-solid fa-graduation-cap text-pink-400 mr-1"></i> Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: PENDAFTARAN PAGE -->
+        <section id="page-pendaftaran" class="page-section py-10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Registration Form Wrapper -->
+                <div id="form-container" class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-24 -right-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Form Header -->
+                    <div class="mb-8 text-center sm:text-left border-b border-slate-800 pb-6">
+                        <span class="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-widest">Formulir Peserta Baru</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Pendaftaran Pelatihan Coding</h2>
+                        <p class="text-slate-400 text-sm mt-1">Isi data diri Anda secara lengkap di bawah ini untuk mengamankan slot kelas.</p>
+                    </div>
+
+                    <!-- Main Form -->
+                    <form id="registration-form" class="space-y-6" novalidate>
+                        
+                        <!-- NIK Input -->
+                        <div>
+                            <label for="nik" class="block text-sm font-semibold text-slate-200 mb-2">
+                                NIK (Nomor Induk Kependudukan) <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-address-card"></i>
+                                </div>
+                                <input type="text" id="nik" name="nik" maxlength="16" placeholder="Masukkan 16 digit NIK Anda" 
+                                    class="w-full pl-10 pr-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all font-mono text-sm">
+                            </div>
+                            <p id="error-nik" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> NIK wajib diisi 16 digit angka.</p>
+                        </div>
+
+                        <!-- Nama Lengkap Input -->
+                        <div>
+                            <label for="nama" class="block text-sm font-semibold text-slate-200 mb-2">
+                                Nama Lengkap <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <input type="text" id="nama" name="nama" placeholder="Sesuai dengan KTP / Dokumen Resmi" 
+                                    class="w-full pl-10 pr-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                            </div>
+                            <p id="error-nama" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> Nama lengkap wajib diisi.</p>
+                        </div>
+
+                        <!-- Jenis Kelamin Radio Buttons -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">
+                                Jenis Kelamin <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label class="flex items-center p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="radio" name="jenis_kelamin" value="Laki-laki" class="w-4 h-4 text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500 focus:ring-offset-slate-900">
+                                    <span class="ml-3 text-sm font-medium text-slate-300">Laki-laki</span>
+                                </label>
+                                <label class="flex items-center p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="radio" name="jenis_kelamin" value="Perempuan" class="w-4 h-4 text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500 focus:ring-offset-slate-900">
+                                    <span class="ml-3 text-sm font-medium text-slate-300">Perempuan</span>
+                                </label>
+                            </div>
+                            <p id="error-jk" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> Silakan pilih jenis kelamin Anda.</p>
+                        </div>
+
+                        <!-- No HP Input -->
+                        <div>
+                            <label for="nohp" class="block text-sm font-semibold text-slate-200 mb-2">
+                                Nomor HP / WhatsApp <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <input type="tel" id="nohp" name="nohp" placeholder="Contoh: 081234567890" 
+                                    class="w-full pl-10 pr-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all font-mono text-sm">
+                            </div>
+                            <p id="error-nohp" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> Nomor HP valid wajib diisi (min 10 digit).</p>
+                        </div>
+
+                        <!-- Alamat Input -->
+                        <div>
+                            <label for="alamat" class="block text-sm font-semibold text-slate-200 mb-2">
+                                Alamat Lengkap <span class="text-rose-500">*</span>
+                            </label>
+                            <textarea id="alamat" name="alamat" rows="3" placeholder="Tuliskan alamat rumah/domisili Anda secara lengkap" 
+                                class="w-full p-3.5 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm"></textarea>
+                            <p id="error-alamat" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> Alamat wajib diisi.</p>
+                        </div>
+
+                        <!-- Bahasa Pemrograman Checkboxes -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">
+                                Bahasa Pemrograman yang Diminati <span class="text-rose-500">*</span>
+                                <span class="text-xs text-slate-400 font-normal ml-1">(Bisa pilih lebih dari satu)</span>
+                            </label>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="JavaScript / TypeScript" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">JavaScript</span>
+                                </label>
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="Python" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">Python</span>
+                                </label>
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="PHP / Laravel" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">PHP</span>
+                                </label>
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="Java / Kotlin" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">Java / Kotlin</span>
+                                </label>
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="Dart / Flutter" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">Dart (Flutter)</span>
+                                </label>
+                                <label class="flex items-center p-3 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-slate-700 transition-all">
+                                    <input type="checkbox" name="lang" value="C++ / C#" class="w-4 h-4 rounded text-cyan-500 bg-slate-900 border-slate-700 focus:ring-cyan-500">
+                                    <span class="ml-2.5 text-xs sm:text-sm font-medium text-slate-300">C++ / C#</span>
+                                </label>
+                            </div>
+                            <p id="error-lang" class="text-rose-400 text-xs mt-1.5 hidden flex items-center"><i class="fa-solid fa-circle-exclamation mr-1"></i> Pilih minimal satu bahasa pemrograman.</p>
+                        </div>
+
+                        <!-- Form Submit Button -->
+                        <div class="pt-4">
+                            <button type="button" id="btn-submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-base shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:opacity-95 transition-all duration-200 flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                <span>Simpan Pendaftaran</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Result Box (Hidden by default, shown after form confirm) -->
+                <div id="result-container" class="hidden bg-slate-900 border border-emerald-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
+                    <div class="flex items-center space-x-4 border-b border-slate-800 pb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl flex-shrink-0">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">Status: Terdaftar</span>
+                            <h2 class="text-2xl font-extrabold text-white">Data Pendaftaran Peserta</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80">
+                            <span class="text-xs text-slate-400 block mb-1">NIK</span>
+                            <span id="res-nik" class="font-mono font-bold text-cyan-400 text-base"></span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80">
+                            <span class="text-xs text-slate-400 block mb-1">Nama Lengkap</span>
+                            <span id="res-nama" class="font-bold text-white text-base"></span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80">
+                            <span class="text-xs text-slate-400 block mb-1">Jenis Kelamin</span>
+                            <span id="res-jk" class="font-semibold text-slate-200"></span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80">
+                            <span class="text-xs text-slate-400 block mb-1">Nomor HP / WA</span>
+                            <span id="res-nohp" class="font-mono font-semibold text-slate-200"></span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 md:col-span-2">
+                            <span class="text-xs text-slate-400 block mb-1">Alamat Domisili</span>
+                            <span id="res-alamat" class="text-slate-200"></span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 md:col-span-2">
+                            <span class="text-xs text-slate-400 block mb-2">Bahasa Pemrograman Diminati</span>
+                            <div id="res-lang" class="flex flex-wrap gap-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                        <button id="btn-register-again" class="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-all text-center">
+                            <i class="fa-solid fa-pen-to-square mr-2"></i> Edit / Daftar Baru
+                        </button>
+                        <a href="#gallery" class="flex-1 py-3 px-4 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition-all text-center">
+                            <i class="fa-solid fa-images mr-2"></i> Lihat Galeri Kegiatan
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 mt-auto py-8 text-slate-400 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-code text-cyan-400"></i>
+                <span class="font-semibold text-slate-200">CodeVerse Academy</span>
+                <span>&copy; 2026. All rights reserved.</span>
+            </div>
+            <div class="flex space-x-4 text-base">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CONFIRMATION MODAL DIALOG -->
+    <div id="confirm-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl transform scale-95 transition-transform duration-300 space-y-5">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl mx-auto">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div class="text-center space-y-2">
+                <h3 class="text-xl font-extrabold text-white">Konfirmasi Pendaftaran</h3>
+                <p class="text-slate-300 text-base font-medium">Apakah Anda sudah yakin untuk menyimpan?</p>
+                <p class="text-slate-500 text-xs">Pastikan seluruh data NIK, Nama, dan pilihan bahasa pemrograman sudah benar.</p>
+            </div>
+            <div class="flex items-center space-x-3 pt-2">
+                <button id="modal-btn-cancel" class="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-sm transition-all">
+                    Batal
+                </button>
+                <button id="modal-btn-confirm" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 hover:opacity-95 transition-all">
+                    Ya, Saya Yakin
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
